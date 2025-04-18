@@ -1,0 +1,76 @@
+/* Search Results Page Styles */
+.search-results-page {
+    background-color: #121212;
+    color: #ead8b1;
+    padding: 2rem;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .search-results-page h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.8rem;
+  }
+  
+  /* Loading state */
+  .search-results-page p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  /* Cards styling */
+  .prompt-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .prompt-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .prompt-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    color: #f5e6c8;
+    font-size: 1.4rem;
+  }
+  
+  .prompt-card p {
+    color: #d0bfa0;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .prompt-card small {
+    display: block;
+    color: #8c7b5c;
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .search-results-page {
+      padding: 3rem;
+    }
+    
+    .prompt-card {
+      padding: 2rem;
+    }
+  }
+  
+  /* No results found */
+  .search-results-page p:last-child {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    color: #a99671;
+  }
